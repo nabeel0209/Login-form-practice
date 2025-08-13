@@ -1,4 +1,5 @@
-// HTML all elements
+document.addEventListener('DOMContentLoaded', () => {
+    // HTML all elements
 let logOutBtn = document.getElementById('logOutRegisterBtn');
 let logInBtn = document.getElementById('loginRegisterBtn');
 let dashBoardBtn = document.getElementById('Dashboard-view');
@@ -172,3 +173,5 @@ function showUserDashboard() {
     document.getElementById('popupForm').style.display = 'flex'; // Always show popup
 }
 
+
+})
