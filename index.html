@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OLX Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="upper-part">
+                <div class="logo">
+                    <a href="https://www.olx.com.pk/" target="_blank">
+                        <img src="./olx-logo-vector.svg" alt="Olx logo">
+                    </a>
+                </div>
+                <div class="vehicle-house">
+                    <a href="#">
+                        <div class="upper-icons">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    class="_5120d4ee" alt="OLX Motors">
+                                    <path
+                                        d="M23.75 8.38a1.66 1.66 0 0 0-2.08-1.08l-.92.3-1.59-3.35-.5-.17a24.01 24.01 0 0 0-7.16-1c-2.23-.06-4.44.28-6.54 1.03l-.45.18-1.52 3.5-.64-.2a1.66 1.66 0 1 0-1 3.17l.12.04-.1.18a6.1 6.1 0 0 0-.61 2.26c-.01.37 0 1.11.03 1.83l.01 4v.03c-.02.36.02.73.12 1.08a1.1 1.1 0 0 0 1.11.74H4.4a1.1 1.1 0 0 0 1.1-.74c.1-.35.15-.72.13-1.08v-.44c2.76.25 4.53.37 6.28.37 1.74 0 3.45-.12 6.1-.36v.43c-.02.36.02.73.12 1.08a1.1 1.1 0 0 0 1.11.74h2.37a1.1 1.1 0 0 0 1.11-.74c.1-.35.14-.72.12-1.08l.01-3.96v-.03c.05-.74.1-1.5.1-1.93a5.6 5.6 0 0 0-.64-2.35l-.1-.21.47-.15a1.66 1.66 0 0 0 1.08-2.09zM5.37 5.18h.02c1.96-.69 4.03-1 6.1-.94 2.3-.04 4.6.28 6.8.93l.04.02 1.3 2.74a26.7 26.7 0 0 1-6.42.62h-1.06c-2.69.1-5.37-.05-8.03-.45l1.26-2.92zm-.9 13.92c0 .22-.01.45-.05.66H2a3.25 3.25 0 0 1-.04-.66v-.87c.16.08.33.13.5.15l2.02.18v.54zm17.2-.04v.04c0 .23-.01.45-.05.67h-2.44a3.26 3.26 0 0 1-.03-.67v-.53l1.88-.18c.22-.02.44-.09.63-.2v.87zm.64-9.7l-1.76.57.71 1.43c.3.57.48 1.2.5 1.85.02.37-.03 1.06-.07 1.7h-.01v.2l-.07 1.06c-.01.43-.28 1.05-.7 1.1-4.48.41-6.74.62-9 .62-2.28 0-4.66-.21-9.35-.64-.28-.03-.47-.48-.53-.9-.04-.3-.08-.79-.1-1.3v-.14a25.4 25.4 0 0 1-.02-1.62c.05-.61.21-1.21.48-1.77l.77-1.39-1.47-.46a.5.5 0 0 1 .3-.97l1.63.52.02-.02c2.45.43 4.94.6 7.43.52h2.13a26.8 26.8 0 0 0 6.92-.7l.49-.15L22 8.4a.51.51 0 0 1 .63.33.5.5 0 0 1-.33.64z">
+                                    </path>
+                                    <path
+                                        d="M4.54 12.08a1.8 1.8 0 1 0 0 3.6 1.8 1.8 0 0 0 0-3.6zm0 2.46a.65.65 0 1 1 0-1.3.65.65 0 0 1 0 1.3zm14.57-2.46a1.8 1.8 0 1 0 0 3.6 1.8 1.8 0 0 0 0-3.6zm0 2.46a.65.65 0 1 1 0-1.3.65.65 0 0 1 0 1.3zm-11.71.28h8.96v1.15H7.4v-1.15z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <span>Motors</span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="upper-icons">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    class="_5120d4ee" alt="OLX Property">
+                                    <path
+                                        d="M22.78 21.81V7.8L15.3 5.3v1.58l5.98 2V21.8H13.8V.7H1.22v21.1h-.6v1.5h22.76v-1.5h-.6zM12.3 4.3v17.5H2.72V2.2h9.58v2.1z">
+                                    </path>
+                                    <path
+                                        d="M7.98 4.37h2.42v1.21H7.98v-1.2zm-3.63 0h2.42v1.21H4.35v-1.2zM7.98 6.8h2.42V8H7.98V6.8zm-3.63 0h2.42V8H4.35V6.8zm3.63 3.62h2.42v1.21H7.98v-1.2zm-3.63 0h2.42v1.21H4.35v-1.2zm3.63 2.42h2.42v1.21H7.98v-1.2zm-3.63 0h2.42v1.21H4.35v-1.2zm3.63 3.63h2.42v1.21H7.98v-1.2zm-3.63 0h2.42v1.21H4.35v-1.2zm13.31-6.05h1.21v1.21h-1.2v-1.2zm-2.42 0h1.21v1.21h-1.2v-1.2zm2.42 2.42h1.21v1.21h-1.2v-1.2zm-2.42 0h1.21v1.21h-1.2v-1.2zm2.42 3.63h1.21v1.21h-1.2v-1.2zm-2.42 0h1.21v1.21h-1.2v-1.2z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <span>Property</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="lower-part">
+
+                <div class="location" id="map-div">
+
+                    <div class="mark-img">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z">
+                            </path>
+                        </svg>
+                    </div>
+
+                    <div class="location-bar">
+
+                        <select id="dropdown" name="location">
+
+                            <option>Pakistan</option>
+                            <hr>
+                            <option>Use current location</option>
+                            <hr>
+
+                            <optgroup label="Choose Region">
+                                <option>
+                                    <span>Sindh, Pakistan</span>
+                                </option>
+                                <option>
+                                    <span>Punjab, Pakistan</span>
+                                </option>
+                                <option>
+                                    <span>Azad Kashmir, Pakistan</span>
+                                </option>
+                                <option>
+                                    <span>Balochistan, Pakistan</span>
+                                </option>
+                                <option>
+                                    <span>Khyber Pakhtunkhwa, Pakistan</span>
+                                </option>
+                                <option>
+                                    <span>Northern Areas, Pakistan</span>
+                                </option>
+                            </optgroup>
+                            <optgroup label="Choose City">
+
+                                <option>
+                                    <span>Karachi, Sindh</span>
+                                </option>
+                                <option>
+                                    <span>Islamabad, Punjab</span>
+                                </option>
+                                <option>
+                                    <span>Lahore, Punjab</span>
+                                </option>
+                                <option>
+                                    <span>Quetta, Balochistan</span>
+                                </option>
+                                <option>
+                                    <span>Peshawar, KPK</span>
+                                </option>
+                                <option>
+                                    <span>Hunza, Northern Areas</span>
+                                </option>
+
+                            </optgroup>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+                <div class="searchbar-box">
+
+                    <div class="searchbar">
+                        <input type="text" placeholder="Find Cars, Mobile phone and more...">
+                    </div>
+                    <div class="search-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="21" width="21" viewBox="0 0 24 24"
+                            troke-width="2" stroke="white" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                        </svg>
+                    </div>
+
+                </div>
+
+                <!-- Login / Register buttons -->
+                <div class="login">
+                    <a href="#" onclick="showForm()" id="loginRegisterBtn">Login</a>
+                    <a href="#" onclick="showUserDashboard()" id="Dashboard-view">User</a>
+                </div>
+
+                <!-- login Register form structure -->
+                <div class="popup-overlay" id="popupForm">
+                    <div class="popup-box">
+                        <span class="close-btn" onclick="closeForm()">×</span>
+                        <div class="form-toggle" id="toggleBtn">
+                            <button id="loginTab" class="active" onclick="toggleForm('login')">Login</button>
+                            <button id="registerTab" onclick="toggleForm('register')">Register</button>
+                        </div>
+
+                        <!-- Login area -->
+                        <form id="loginForm" class="form-container active" onsubmit="loginUser(event)">
+                            <h2>Login</h2>
+                            <input type="email" placeholder="Email" id="loginEmail">
+                            <input type="password" placeholder="Password" id="loginPassword">
+                            <input type="submit" value="Login">
+                        </form>
+
+                        <!-- Register Area -->
+                        <form id="registerForm" class="form-container" onsubmit="registerUser(event)">
+                            <h2>Register</h2>
+                            <input type="text" placeholder="Name" id="registerName" required>
+                            <input type="email" placeholder="Email" id="registerEmail" required>
+                            <input type="text" placeholder="Password" id="registerPassword" required>
+                            <input type="submit" value="Register">
+                        </form>
+
+                        <!-- User Dashboard Area -->
+                        <div id="userDashBoard" class="form-container dashboard">
+                            <h2>User Dashboard</h2>
+                            <p id="userDashBoardName"></p>
+                            <p id="userDashBoardEmail"></p>
+                            <input type="submit" value="Logout" id="logOutRegisterBtn" onclick="logOut()">
+                        </div>
+                    </div>
+                </div>
+                <!-- form ends here -->
+
+                <div class="sell">
+                    <button class="sell-btn">
+                        <img src="https://www.olx.com.pk/assets/iconSellBorder_noinline.d9eebe038fbfae9f90fd61d971037e02.svg"
+                            class="btn-border" alt="Button border">
+                        <div class="btn-text">
+                            <span>+ SELL</span>
+
+                        </div>
+                    </button>
+                </div>
+
+
+        </header>
+    </div>
+    <main>
+        <section>
+            <div class="categorybar">
+                <div class="category-name">
+                    <div class="category-dropdown">
+                        <span>ALL CATEGORIES</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" hight="23" width="23" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="category-name">
+                    <a href="#">Mobile Phones</a>
+                </div>
+
+                <div class="category-name">
+                    <a href="#">Cars</a>
+                </div>
+
+                <div class="category-name">
+                    <a href="#">Motorcycles</a>
+                </div>
+
+                <div class="category-name">
+                    <a href="#">Houses</a>
+                </div>
+
+                <div class="category-name">
+                    <a href="#">Videos-Audios</a>
+                </div>
+
+                <div class="category-name">
+                    <a href="#">Tablets</a>
+                </div>
+
+                <div class="category-name">
+                    <a href="#">Land & Plots</a>
+                </div>
+            </div>
+
+            <div class="banner">
+                <img src="https://images.olx.com.pk/thumbnails/527654309-800x600.webp" alt="banner">
+            </div>
+            <div class="cards-sec">
+                <div class="main-heading">
+                    <span>All categories</span>
+                </div>
+                <div class="categories">
+
+                    <div class="category-names">
+                        <img src="https://www.olx.com.pk/assets/mobiles.73f961c6ad58605c032eb7c2cf12aeaa.png" alt="">
+                        <span>Mobiles</span>
+                    </div>
+
+
+
+                    <div class="category-names">
+                        <img src="https://www.olx.com.pk/assets/vehicles.354a5ebfb7f21e87991a277dd4b40f4b.png" alt="">
+                        <span>Vehicles</span>
+                    </div>
+
+
+                    <div class="category-names">
+                        <img src="https://www.olx.com.pk/assets/property-for-sale.69b01e8dafc182fa3bd469d0ed4fc801.png"
+                            alt="">
+                        <span>Property for sale</span>
+
+                    </div>
+
+                    <div class="category-names">
+                        <img src="https://www.olx.com.pk/assets/property-for-rent.49f99cc528b9b88da4f33fbe1f0b3346.png"
+                            alt="">
+                        <span>property for rent</span>
+                    </div>
+
+
+                    <div class="category-names">
+                        <img src="https://www.olx.com.pk/assets/electronics-home-appliances.0a30101e6fd7d9ccc8cd6b85b9b44cee.png"
+                            alt="">
+                        <span>Electronic Home & appliances</span>
+                    </div>
+
+
+                    <div class="category-names">
+                        <img src="https://www.olx.com.pk/assets/bikes.0a5064ae987f3bd72801b7bc2c3b6e02.png" alt="">
+                        <span>Bikes</span>
+                    </div>
+
+
+                    <div class="category-names">
+                        <img src="https://www.olx.com.pk/assets/business-industrial-agriculture.2ec28979a1bde0183c777a0ce51b37c6.png"
+                            alt="">
+                        <span>Business, Industrial and Agricultural</span>
+                    </div>
+
+
+                    <div class="category-names">
+                        <img src="https://www.olx.com.pk/assets/services.23d8eb1535f319324813848887961a59.png" alt="">
+                        <span>Services</span>
+                    </div>
+
+
+                    <div class="category-names">
+                        <img src="https://www.olx.com.pk/assets/jobs.dc882b8ff65e94850cc12f5abd605420.png" alt="">
+                        <span>Jobs</span>
+                    </div>
+
+
+                    <div class="category-names">
+                        <img src="https://www.olx.com.pk/assets/animals.476fa9caaf88a12dfbcd6db4c8c6f17a.png" alt="">
+                        <span>Animals</span>
+                    </div>
+
+
+                    <div class="category-names">
+                        <img src="https://www.olx.com.pk/assets/furniture-home-decor.47a1998de5f4a8a9e84702dcb40bb313.png"
+                            alt="">
+                        <span>Furniture & Home Decor</span>
+                    </div>
+
+
+                    <div class="category-names">
+                        <img src="https://www.olx.com.pk/assets/fashion-beauty.6ef7c1f060c92b55a6b28bfcfb16a1d2.png"
+                            alt="">
+                        <span>Fashion & Beauty</span>
+                    </div>
+
+                    <div class="category-names">
+                        <img src="https://www.olx.com.pk/assets/books-sports-hobbies.9406daf905b451fa283048652f414054.png"
+                            alt="">
+                        <span>Books, Sports & Hobbies</span>
+                    </div>
+
+                    <div class="category-names">
+                        <img src="https://www.olx.com.pk/assets/kids.5de42a58bc91f81fa22ccc401d7ac285.png" alt="">
+                        <span>Kids</span>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        <!-- login editing -->
+        <!-- end -->
+        <section>
+            <!-- Advertisement section (Recent viewed) -->
+
+            <div class="ad-section">
+                <div class="section-heading">
+                    <h4>Recently viewed</h4>
+                </div>
+                <div class="view-link"><a href="#">view more <span><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                height="14" width="14" viewBox="0 0 24 24" stroke-width="1.5" stroke="#20b6ae"
+                                class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                            </svg></span></a></div>
+                <!-- ad container/ cards -->
+
+                <div class="ad-container" id="dynamic-cards">
+
+
+
+                </div>
+
+
+        </section>
+        <section class="bottom-banner">
+            <div class="olxapp-banner">
+                <div class="pic-1">
+                    <img src="https://www.olx.com.pk/assets/olx-mobile-app.dfa5b83f01c6e269aca19a3faff716a6.webp"
+                        alt="">
+                </div>
+                <div class="banner-text">
+                    <h1>
+                        Try the OLX app
+                    </h1>
+                    <span>
+                        Buy, sell and find just about anything using the app on your mobile.
+                    </span>
+                </div>
+                <div class="platforms">
+                    <div class="platform-text">
+                        <span>GET YOUR APP TODAY</span>
+                    </div>
+                    <div class="platform-pics" id="banner-apps">
+                        <a href="">
+                            <img id="b-pics" src="/platform-images/appstore.svg" alt="">
+                        </a>
+                        <a href="">
+                            <img id="b-pics" src="/platform-images/googleplay.svg" alt="">
+                        </a>
+                        <a href="">
+                            <img id="b-pics" src="/platform-images/appgallery.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="main-footer">
+            <div class="foot-divs">
+                <div class="title">
+                    <span>
+                        Popular categories
+                    </span>
+                </div>
+                <div class="foot-links">
+                    <a href="">
+                        <span>Cars</span>
+                    </a>
+                    <a href="">
+                        <span>Flats For Rent</span>
+                    </a>
+                    <a href="">
+                        <span>Mobile Phones</span>
+                    </a>
+                    <a href="">
+                        <span>Jobs</span>
+                    </a>
+                </div>
+            </div>
+            <div class="foot-divs">
+                <div class="title">
+                    <span>
+                        Trending searches
+                    </span>
+                </div>
+                <div class="foot-links">
+                    <a href="">
+                        <span>Bikes</span>
+                    </a>
+                    <a href="">
+                        <span>Watches</span>
+                    </a>
+                    <a href="">
+                        <span>Books</span>
+                    </a>
+                    <a href="">
+                        <span>Dogs</span>
+                    </a>
+                </div>
+            </div>
+            <div class="foot-divs">
+                <div class="title">
+                    <span>
+                        About Us
+                    </span>
+                </div>
+                <div class="foot-links">
+                    <a href="">
+                        <span>About Dubizzle Group</span>
+                    </a>
+                    <a href="">
+                        <span>OLX Blog</span>
+                    </a>
+                    <a href="">
+                        <span>Contact Us</span>
+                    </a>
+                    <a href="">
+                        <span>OLX For Business</span>
+                    </a>
+                </div>
+            </div>
+            <div class="foot-divs" id="foot-last-div">
+                <div class="title">
+                    <span>
+                        OLX
+                    </span>
+                </div>
+                <div class="foot-links">
+                    <a href="">
+                        <span>Help</span>
+                    </a>
+                    <a href="">
+                        <span>Sitemap</span>
+                    </a>
+                    <a href="">
+                        <span>Terms Of Use</span>
+                    </a>
+                    <a href="">
+                        <span>Privacy Policy</span>
+                    </a>
+                </div>
+            </div>
+            <div class="social-div">
+                <div class="social-media">
+                    <div class="title">
+                        <span>FOLLOW US</span>
+                    </div>
+                    <div class="social-links">
+                        <div class="links">
+                            <a href="https://twitter.com/OLX_Pakistan" target="_blank">
+
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                    <path d="M39.5 20a19.5 19.5 0 1 0-39 0 19.5 19.5 0 0 0 39 0z" stroke="currentColor"
+                                        stroke-linejoin="bevel"></path>
+                                    <path
+                                        d="M24.54 14h2.25l-4.9 5.61 5.77 7.64h-4.52l-3.55-4.63-4.05 4.63h-2.25l5.25-6L13 14h4.64l3.2 4.23 3.7-4.23zm-.78 11.9H25l-8.04-10.62h-1.34l8.13 10.63z"
+                                        fill="currentColor"></path>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="links">
+                            <a href="https://www.facebook.com/olxpakistan" target="_blank">
+
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                    <path d="M39.5 20a19.5 19.5 0 1 0-39 0 19.5 19.5 0 0 0 39 0z" stroke="currentColor"
+                                        stroke-linejoin="bevel"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M20 11.67a8.36 8.36 0 0 0-8.33 8.38 8.37 8.37 0 0 0 7.03 8.28v-5.86h-2.12v-2.42h2.12V18.2c0-2.1 1.24-3.26 3.15-3.26.9 0 1.86.17 1.86.17v2.06h-1.05c-1.04 0-1.36.65-1.36 1.3v1.58h2.31l-.37 2.42H21.3v5.86a8.37 8.37 0 0 0 7.03-8.28A8.36 8.36 0 0 0 20 11.67z"
+                                        fill="currentColor"></path>
+                                </svg>
+                        </div>
+                        <div class="links">
+                            <a href="https://www.youtube.com/channel/UCARDDjJnW7IRBpo_AP7WTHQ?sub_confirmation=1"
+                                target="_blank">
+
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                    <path d="M39.5 20a19.5 19.5 0 1 0-39 0 19.5 19.5 0 0 0 39 0z" stroke="currentColor"
+                                        stroke-linejoin="bevel"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M18.5 22.76v-5.1l4.48 2.55-4.49 2.55zm9.97-6.7a2.16 2.16 0 0 0-1.52-1.53c-1.33-.36-6.7-.36-6.7-.36s-5.37 0-6.7.36a2.16 2.16 0 0 0-1.53 1.52c-.35 1.35-.35 4.16-.35 4.16s0 2.81.35 4.16c.2.74.78 1.33 1.52 1.53 1.34.36 6.7.36 6.7.36s5.38 0 6.71-.36c.74-.2 1.32-.79 1.52-1.53.36-1.35.36-4.16.36-4.16s0-2.8-.36-4.16z"
+                                        fill="currentColor"></path>
+                                </svg>
+                        </div>
+                        <div class="links">
+                            <a href="https://www.instagram.com/olx.pakistan/" target="_blank">
+
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                    <path d="M39.5 20a19.5 19.5 0 1 0-39 0 19.5 19.5 0 0 0 39 0z" stroke="currentColor"
+                                        stroke-linejoin="bevel"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M24.17 11.67h-8.34a4.17 4.17 0 0 0-4.16 4.16v8.34a4.17 4.17 0 0 0 4.16 4.16h8.34a4.17 4.17 0 0 0 4.16-4.16v-8.34c0-2.3-1.86-4.16-4.16-4.16zm0 1.66a2.5 2.5 0 0 1 2.5 2.5v8.34a2.5 2.5 0 0 1-2.5 2.5h-8.34a2.5 2.5 0 0 1-2.5-2.5v-8.34a2.5 2.5 0 0 1 2.5-2.5h8.34zM20 15.83a4.17 4.17 0 1 0 0 8.34 4.17 4.17 0 0 0 0-8.34zm0 1.67a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zm4.45-1.12a.83.83 0 1 0 0-1.66.83.83 0 0 0 0 1.66z"
+                                        fill="currentColor"></path>
+                                </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="platform-pics">
+                    <a href="">
+                        <img src="/platform-images/appstore.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="/platform-images/googleplay.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="/platform-images/appgallery.svg" alt="">
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="rights">
+            <div class="text">
+                © All rights reserved by: <a href="https://github.com/owaim" target="_blank">"Muhammad Owaim"</a>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+<!-- form js -->
+
+
+<script src="script.js"></script>
+
+</html>
